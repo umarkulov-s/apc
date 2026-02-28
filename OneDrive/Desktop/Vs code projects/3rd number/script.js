@@ -1,7 +1,7 @@
-let name = prompt("ismiingizni kiriting:").toLowerCase().trim();
+var name = prompt("ismiingizni kiriting:").toLowerCase().trim();
 
-let log = "";
-for (let i = name.length - 1; i >= 0; i--) {
-    log += name[i];
+var log = "";
+for (var i = name.length - 1; i >= 0; i--) {
+    log = log + name[i];
 }
 console.log(log);
