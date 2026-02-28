@@ -24,29 +24,36 @@
 //         alert("notogri amal kiritldi")
 //         break;
 //     }
-var input = prompt("marn yozing");
+// var input = prompt("marn yozing");
 
-switch (true) {
+// switch (true) {
 
-    case (input === null && input.trim() === ""):
-        console.log("soz yozilmadi");
-        break;
+//     case (input === null && input.trim() === ""):
+//         console.log("soz yozilmadi");
+//         break;
 
-    default:
-        var words = input.trim().split(" ");
-        var count = 0;
+//     default:
+//         var words = input.trim().split(" ");
+//         var count = 0;
 
-        for (var i = 0; i < words.length; i++) {
+//         for (var i = 0; i < words.length; i++) {
 
-            switch (words[i]) {
-                case "":
-                    break;
+//             switch (words[i]) {
+//                 case "":
+//                     break;
 
-                default:
-                    console.log(words[i]);
-                    count++;
-            }
-        }
+//                 default:
+//                     console.log(words[i]);
+//                     count++;
+//             }
+//         }
 
-        console.log( count + "ta soz");
+//         console.log( count + "ta soz");
+// }
+let name = prompt("ismiingizni kiriting:").toLowerCase().trim();
+
+let log = "";
+for (let i = name.length - 1; i >= 0; i--) {
+    log += name[i];
 }
+console.log(log);
